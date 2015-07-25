@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>
+    Register New Family - Step2
+</h1>
+<h2>
+    Lets add the family team!!
+</h2>
+
+<form role="form" method="POST">
+    <div class="form-group">
+        <label for="content">Team Member Name</label>
+        <textarea class="form-control" id="addmembername" name="addmembername" placeholder="Add Member Name Please" required></textarea>
+        <label for="content">Team Member Email</label>
+        <textarea class="form-control" id="emailaddr" name="emailaddr" placeholder="Email Address Please" required></textarea>
+    </div>
+    <button type="addsubmit" class="btn btn-default">Add</button>
+    <button type="addsubmit" class="btn btn-default">Done</button>
+</form>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>
+    Register New Family - Step1 
+</h1>
+
+<form role="form" method="POST">
+    <div class="form-group">
+        <label for="title">Family name. eg. The Smith Family</label>
+        <input type="text" class="form-control" id="familayname" name="username" placeholder="family name" </required>
+    </div>
+    <div class="form-group">
+        <label for="content">Login name</label>
+        <textarea class="form-control" id="emailaddr" name="emailaddr" placeholder="Email Address" required></textarea>
+    </div>
+  <div class="form-group">
+        <label for="title">Password</label>
+        <input type="text" class="form-control" id="password1" name="password1" placeholder="Password" required>
+    </div>
+  <div class="form-group">
+        <label for="title">Password Again</label>
+        <input type="text" class="form-control" id="password2" name="password2" placeholder="Retype Password" required>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+{% endblock %}

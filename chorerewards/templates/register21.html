@@ -1,0 +1,25 @@
+{% import "macros.html" as macros %}
+{% extends "base.html" %}
+
+{% block content %}
+<h1>
+    Register New Family - Step2
+</h1>
+<h2>
+    Lets add the family team!!
+</h2>
+
+<form role="form" method="POST">
+{% for member in members %}
+{{ macros.render_member(member) }}
+{% endfor %}
+
+    <div class="form-group">
+        <label for="content">Team Member Email</label>
+        <textarea class="form-control" id="emailaddr" name="emailaddr" placeholder="Email Address Please"></textarea>
+    </div>
+    <button type="addsubmit" class="button btn-default" value="add">Add</button>
+    <button type="addsubmit" class="button btn-default" value="done">Done</button>
+</form>
+{% endblock %}
+
